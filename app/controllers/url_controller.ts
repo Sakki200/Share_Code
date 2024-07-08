@@ -10,8 +10,7 @@ export default class URLController {
       id += patern.charAt(Math.floor(Math.random() * paternLength))
       counter += 1
     }
-    //
-    
+
     return response.redirect(`/${id}`)
   }
 
