@@ -7,32 +7,12 @@
 
   @vite(['resources/css/app.css', 'resources/js/app.js'])
   
-
 </head>
 <body>
-  <h1>Code Input</h1>
+  <h1>Share-Code</h1>
   
-  <textarea id="code" placeholder="Enter your code here..."></textarea>
+  <textarea id="code" placeholder="Votre code........."></textarea>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const codeTextarea = document.getElementById('code');
 
-      // Restore textarea content on page load
-      restoreTextareaContent();
-
-      // Save textarea content as user types
-      codeTextarea.addEventListener('input', () => {
-        localStorage.setItem('currentCode', codeTextarea.value);
-      });
-
-      function restoreTextareaContent() {
-        const savedCode = localStorage.getItem('currentCode');
-        if (savedCode) {
-          codeTextarea.value = savedCode;
-        }
-      }
-    });
-  </script>
 </body>
 </html>
