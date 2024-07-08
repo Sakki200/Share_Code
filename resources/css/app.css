@@ -4,6 +4,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   background-color: rgb(239, 230, 216);
+  
 }
 textarea {
   background-color: rgb(233, 220, 202);
@@ -19,4 +20,28 @@ textarea {
 h1 {
   text-align: center;
   color: #333;
+}
+
+/* Night mode styles */
+body.night-mode {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+body.night-mode #code {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  border-color: #444;
+}
+body.night-mode #nightModeToggle {
+  background-color: #444;
+  color: #ffffff;
+}
+
+body.night-mode h1 {
+  color: #ffffff;
+}
+
+#group{
+  display: inline-flex;
+  gap: 1rem;
 }

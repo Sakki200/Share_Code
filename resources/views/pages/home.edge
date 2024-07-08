@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdonisJS - Code Input</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  
 
   @vite(['resources/css/app.css', 'resources/js/app.js'])
   
@@ -12,6 +14,11 @@
   <h1>Share-Code</h1>
   
   <textarea id="code" placeholder="Votre code........."></textarea>
+  <div id="group">
+    <div id="languageDetected"></div>
+    <button id="nightModeToggle">Mode Nuit</button>
+  </div>
+
 
 
 </body>
