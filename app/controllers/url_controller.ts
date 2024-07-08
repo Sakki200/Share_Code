@@ -1,5 +1,7 @@
+import { Database } from '@adonisjs/lucid/database'
+
 export default class URLController {
-  async RedirectURL({ response }: any) {
+  async RedirectURL({ request, response }: any) {
     //Pour l'url random
     let id = ''
     const length = 3
