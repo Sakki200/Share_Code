@@ -11,16 +11,10 @@ const AuthFinder = withAuthFinder(() => hash.use('scrypt'), {
 
 export default class User extends compose(BaseModel, AuthFinder) {
   @column({ isPrimary: true })
-  declare id: number
+  declare url: number
 
   @column()
-  declare fullName: string | null
-
-  @column()
-  declare email: string
-
-  @column({ serializeAs: null })
-  declare password: string
+  declare code: string 
 
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
