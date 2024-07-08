@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const codeTextarea = document.getElementById('code');
     const languageDetected = document.getElementById('languageDetected');
     const nightModeToggle = document.getElementById('nightModeToggle');
+    const copyUrlButton = document.getElementById('copyUrlButton');
 
     // Restore textarea content on page load
     restoreTextareaContent();
@@ -43,4 +44,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     nightModeToggle.addEventListener('click', toggleNightMode);
+
+          function copyPageUrl() {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          alert('URL copié');
+        });
+      }
+
+      copyUrlButton.addEventListener('click', copyPageUrl);
 });

@@ -3,7 +3,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: rgb(239, 230, 216);
+  background-color: #efe6d8;
   
 }
 textarea {
@@ -36,6 +36,10 @@ body.night-mode #nightModeToggle {
   background-color: #444;
   color: #ffffff;
 }
+body.night-mode #copyUrlButton {
+  background-color: #444;
+  color: #ffffff;
+}
 
 body.night-mode h1 {
   color: #ffffff;
@@ -45,3 +49,4 @@ body.night-mode h1 {
   display: inline-flex;
   gap: 1rem;
 }
+
