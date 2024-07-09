@@ -50,3 +50,19 @@ body.night-mode h1 {
   gap: 1rem;
 }
 
+#urlList {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+#urlList a {
+  display: block;
+  margin-bottom: 5px;
+  color: #c81818;
+  text-decoration: none;
+}
+#urlList a:hover {
+  text-decoration: underline;
+}
+
